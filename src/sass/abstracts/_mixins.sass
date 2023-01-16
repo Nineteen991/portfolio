@@ -13,6 +13,9 @@
 @mixin component-width
   max-width: 100rem
 
+@mixin component-padding
+  padding-top: 11rem
+
 @mixin faded
   opacity: .75
 
@@ -41,8 +44,23 @@
   opacity: 1
   background-size: cover
 
-@mixin component-padding
-  padding-top: 11rem
+@mixin btn 
+  padding: 1rem
+  background: rgba(0,0,0,0)
+
+@mixin ul 
+  list-style: none
+  color: $whitish-blue
+  @include p-font-size
+  @include open-sans
+  @include faded
+  display: grid
+  gap: 1rem
+
+@mixin li-before
+  content: '>'
+  margin-right: 1rem
+  color: $mint
 
 @mixin responsive($breakpoint)
   @if ($breakpoint == medium)

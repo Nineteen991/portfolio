@@ -52,6 +52,16 @@ export default function Navbar({ toggleNavbar, setToggleNavbar }) {
               02.
               <p className='title-p'>Portfolio</p>
             </ScrollLink>
+            <ScrollLink
+              to='work'
+              spy={ true }
+              smooth={ true }
+              duration={ 500 }
+              className='nav-links'
+            >
+              03.
+              <p className='title-p'>Recent Employment</p>
+            </ScrollLink>
           </div>
       }
 
@@ -77,6 +87,17 @@ export default function Navbar({ toggleNavbar, setToggleNavbar }) {
         >
           <p className='title-p'>
             <span className='nav-span'>02.</span> Portfolio
+          </p>
+        </ScrollLink>
+        <ScrollLink
+          to='work'
+          spy={ true }
+          smooth={ true }
+          duration={ 500 }
+          className='nav-links'
+        >
+          <p className='title-p'>
+            <span className='nav-span'>03.</span> Recent Employment
           </p>
         </ScrollLink>
       </div>

@@ -1,0 +1,53 @@
+.work
+  @include component-width
+  @include component-padding
+  @include flex-column
+
+.work-h2
+  display: flex
+  align-items: center
+
+  &::before
+    content: '03.'
+    @include secondary-title-before
+
+  &::after
+    @include secondary-title-after
+
+.work-container
+  margin-top: 2rem
+  display: grid
+
+.jobs
+  display: flex
+
+.job-names
+  @include btn
+  @include titles
+  outline: none
+  border: none
+
+.job-card
+  margin-top: 2rem
+
+.job-title
+  @include open-sans
+  @include h4-font-size
+  color: $whitish-blue
+  margin-bottom: 1rem
+
+.job-desc
+  @include ul
+
+.list-margin
+  position: relative
+  padding-left: 2.5rem
+
+  &::before
+    @include li-before
+    position: absolute
+    left: 0
+
+.underline
+  color: $mint
+  border-bottom: 2px solid $mint
