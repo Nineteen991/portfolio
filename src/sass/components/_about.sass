@@ -1,0 +1,52 @@
+.about
+  @include component-width
+  @include component-padding
+  margin-bottom: 5%
+
+.about-h2
+  display: flex
+  align-items: center
+
+  &::before
+    content: '01.'
+    @include secondary-title-before
+  &::after
+    @include secondary-title-after
+
+.about-info
+  width: 100%
+  margin: 3rem 0
+  @include flex-column
+  justify-content: center
+  align-items: center
+
+  @include responsive(medium)
+    flex-direction: row
+    align-items: center
+
+.about-list
+  list-style: none
+  color: $whitish-blue
+  @include p-font-size
+  @include open-sans
+  @include faded
+  display: grid
+  grid-template-columns: repeat(2, minmax(14rem, 20rem))
+  gap: 1rem
+
+.list-items
+  &::before
+    content: '>'
+    margin-right: 1rem
+
+.about-img-pic
+  height: 20rem
+  width: 40%
+  background-color: $mint
+  @include clip-path
+  display: grid
+  place-content: center
+  margin-top: 2.5rem
+
+  @include responsive(medium)
+    margin-left: 2.5rem

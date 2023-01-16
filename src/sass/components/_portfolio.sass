@@ -1,0 +1,131 @@
+.portfolio
+  @include component-width
+  @include component-padding
+  @include flex-column
+
+.portfolio-h2
+  display: flex
+  align-items: center
+
+  &::before
+    content: '02.'
+    @include secondary-title-before
+
+  &::after
+    @include secondary-title-after
+
+.projects
+  margin: 3rem 0
+  min-height: 40rem
+
+  @include responsive(large)
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: 1fr 5fr 1fr
+
+.project-description
+  padding: 2rem
+  background-color: #2C5364
+  opacity: .75
+
+  @include responsive(large)
+    grid-row: 1 / -1
+    background-color: rgba(0,0,0,0)
+    z-index: 10
+    display: flex
+    flex-direction: column
+    
+.project-right-justified
+  @include responsive(large)
+    grid-column: 3 / -1
+    padding: 2rem 0 2rem 2rem
+    align-items: flex-end
+    text-align: right
+
+.project-left-justified
+  @include responsive(large)
+    grid-column: 1 / 4
+    padding: 2rem 2rem 2rem 0
+    align-items: flex-start
+
+.project-title
+  @include p-font-size
+  @include open-sans
+  color: $mint
+
+.project-desc-div
+  @include responsive(large)
+    background-color: #2C5364
+    opacity: 1
+    padding: 2rem
+
+.project-desc
+  @include p-font-size
+  @include open-sans
+  @include faded
+  color: $whitish-blue
+  &:not(:last-of-type)
+      margin-bottom: 1rem
+
+  @include responsive(large)
+    background-color: #2C5364
+    opacity: 1
+
+.technologies-ul
+  display: flex
+  margin-top: 2rem
+
+.technologies-li
+  @include p-font-size
+  @include open-sans
+  color: $mint
+  opacity: 1
+
+.technologies-li:not(:last-of-type)
+  margin-right: 1rem
+
+.project-links
+  margin-top: 2rem
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: flex-start
+
+.project-icons
+  height: 2.5rem
+  width: 2.5rem
+  cursor: pointer
+
+.project-icons:first-of-type
+  margin-right: 1rem
+
+.project-img-div
+  width: 100%
+  height: 100%
+  opacity: 1
+
+  @include responsive(large)
+    grid-row: 2 / 3
+    z-index: 0
+    opacity: .75
+
+.right-justified
+  @include responsive(large)
+    grid-column: 1 / 4
+
+.left-justified
+  @include responsive(large)
+    grid-column: 3 / -1
+
+.project-img
+  @include project-images
+  background-image: url('../../images/santaCruzGames.png')
+
+.project-img-2
+  @include project-images
+  background-image: url('../../images/taqueriaTepeque.png')
+
+.mini-projects
+  align-self: center
+  margin: 3rem 0
+  

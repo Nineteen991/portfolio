@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before 
+  margin: 0
+  padding: 0
+  box-sizing: inherit
+
+html
+  box-sizing: border-box
+  font-size: 62.5%
+
+  @media (min-width: 3500px)
+    font-size: 187.5%
+
+body
+  height: 100vh
+  width: 100%
+  @include background
+
+a:link, a:visited, a:hover, a:active
+  text-decoration: none
+
+ul
+  list-style: none
+
+.container
+  min-height: 100vh
+  width: 100%
+
+.content
+  padding: 0 2.5rem
+  display: flex
+  @include flex-column
+  align-items: center
+
+.blur-bg
+  filter: blur(.5rem)
+  -webkit-filter: blur(.5rem)
+
+.title
+  @include titles
+
+.secondary-titles
+  @include titles
+  @include h2-font-size
+
+.tertiary-titles
+  @include open-sans
+  @include h3-font-size
+  color: $whitish-blue
+  margin-bottom: 2rem
+
+.faded
+  opacity: .75
+
+.title-p
+  margin: 2rem 0
+  max-width: 55rem
+  color: $whitish-blue
+  @include p-font-size
+  @include open-sans
+  @include faded
+
+.mint
+  color: $mint
+
+.btn
+  padding: 1rem
+  color: $mint
+  border: 2px solid $mint
+  border-radius: .5rem
+  background: rgba(0,0,0,0)
+
+  &:active
+    transform: scale(1.1)

@@ -1,0 +1,56 @@
+@mixin background
+  /* fallback for old browsers */
+  background: #0F2027
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027)
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #2C5364, #203A43, #0F2027)
+
+@mixin flex-column
+  display: flex
+  flex-direction: column
+
+@mixin component-width
+  max-width: 100rem
+
+@mixin faded
+  opacity: .75
+
+@mixin titles 
+  @include open-sans
+  color: $whitish-blue
+
+@mixin secondary-title-before
+  font-size: 1.6rem
+  margin-right: 1rem
+
+@mixin secondary-title-after 
+  content: ''
+  height: 1px
+  width: 100%
+  background-color: $mint
+  display: block
+  margin-left: 1rem
+
+@mixin clip-path
+  clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%)
+
+@mixin project-images
+  height: 100%
+  width: 100%
+  opacity: 1
+  background-size: cover
+
+@mixin component-padding
+  padding-top: 11rem
+
+@mixin responsive($breakpoint)
+  @if ($breakpoint == medium)
+    @media (min-width: 680px)
+      @content
+  @if ($breakpoint == large)
+    @media (min-width: 900px)
+      @content
+  @if ($breakpoint == 4klarge)
+    @media (min-width: 350rem)
+      @content
