@@ -1,0 +1,16 @@
+.contact
+  @include component-width
+  @include component-padding
+  @include flex-column
+  align-items: center
+  margin-bottom: 11rem
+
+.contact-before
+  display: grid
+  place-content: center
+
+  &::before
+    content: "04. What's Next?"
+    @include secondary-title-before
+    color: $mint
+    text-align: center

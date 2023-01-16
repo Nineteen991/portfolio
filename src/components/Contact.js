@@ -5,7 +5,7 @@ export default function Contact() {
       <p className="title-p">
         You can reach me via email. I would love to hear from you!
       </p>
-      <button className="btn">
+      <button className="btn contact-btn">
         <a 
           href="mailto:nineteen99@gmail.com" 
           rel="noopener noreferrer" 

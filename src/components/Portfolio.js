@@ -1,7 +1,11 @@
+import { useState } from 'react'
+
 import githubIcon from '../images/github-mark-white.png'
 import externalLink from '../images/external-link.png'
 
 export default function Portfolio() {
+  const [showMiniProjects, setShowMiniProjects] = useState(false)
+
   return (
     <div className="portfolio" id="portfolio">
       <h2 className="secondary-titles portfolio-h2">Portfolio</h2>
