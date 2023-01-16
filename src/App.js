@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Work from './components/Work'
+import Contact from './components/Contact'
 import './App.sass'
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         <About />
         <Portfolio />
         <Work />
+        <Contact />
       </div>
     </div>
   );
