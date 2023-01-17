@@ -65,7 +65,7 @@
   @include faded
   color: $whitish-blue
   &:not(:last-of-type)
-      margin-bottom: 1rem
+    margin-bottom: 1rem
 
   @include responsive(large)
     background-color: #2C5364
@@ -125,21 +125,22 @@
   @include project-images
   background-image: url('../../images/taqueriaTepeque.png')
 
+.project-img-3
+  @include project-images
+  background-image: url('../../images/devChat.png')
+
 .mini-projects
   align-self: center
   margin: 3rem 0
   
 .more-projects
   @include component-width
-  // @include component-padding
 
 .more-projects-title
   text-align: center
   margin-bottom: 3rem
 
 .more-projects-container
-  
-  
   display: grid
   grid-gap: 2rem
 
@@ -149,14 +150,9 @@
 
 .mini-container
   max-width: 40rem
-  // background-color: #2C5364
-  // height: 42rem
 
   &:not(:last-of-type)
     margin-bottom: 2rem
-  
-  @include responsive(large)
-    // background-color: #2C5364
 
 .mini-desc-div
   background-color: #2C5364

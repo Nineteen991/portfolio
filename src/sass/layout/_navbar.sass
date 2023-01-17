@@ -19,7 +19,7 @@
   z-index: 20
   position: relative
 
-  @include responsive(medium)
+  @include responsive(large)
     display: none
 
 .line1, .line2, .line3
@@ -50,6 +50,7 @@
   padding: 2.5rem
   @include flex-column
   justify-content: center
+  align-items: center
   text-align: center
 
 .nav-links
@@ -59,10 +60,18 @@
 .nav-wide
   display: none
 
-  @include responsive(medium)
+  @include responsive(large)
     display: flex
     justify-content: space-evenly
 
 .nav-span
   color: $mint
   margin-left: 3rem
+
+.resume
+  margin-top: 2rem
+
+  @include responsive(large)
+    margin-top: 0
+    margin-left: 3rem
+    align-self: center

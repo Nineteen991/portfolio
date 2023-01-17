@@ -1,5 +1,7 @@
 import * as Scroll from 'react-scroll'
 
+import resume from '../resume.pdf'
+
 export default function Navbar({ toggleNavbar, setToggleNavbar }) {
   const ScrollLink = Scroll.Link
 
@@ -72,6 +74,9 @@ export default function Navbar({ toggleNavbar, setToggleNavbar }) {
               04.
               <p className='title-p'>Contact</p>
             </ScrollLink>
+            <button className='btn resume'>
+              <a href={resume} target="_blank" rel="noreferrer">Resume</a>
+            </button>
           </div>
       }
 
@@ -121,6 +126,9 @@ export default function Navbar({ toggleNavbar, setToggleNavbar }) {
             <span className='nav-span'>04.</span> Contact
           </p>
         </ScrollLink>
+        <button className='btn resume'>
+          <a href={resume} target="_blank" rel="noreferrer">Resume</a>
+        </button>
       </div>
       
     </nav>

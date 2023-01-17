@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
@@ -22,9 +21,7 @@ export default function App() {
             : null
         }
       >
-        <Routes>
-          <Route path='/' element={ <HomePage /> } />
-        </Routes>
+        <HomePage />
       </div>
     </div>
   );
