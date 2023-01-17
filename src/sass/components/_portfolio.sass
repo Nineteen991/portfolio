@@ -25,8 +25,8 @@
 
 .project-description
   padding: 2rem
-  background-color: #2C5364
   opacity: .75
+  background-color: #2C5364
 
   @include responsive(large)
     grid-row: 1 / -1
@@ -129,3 +129,36 @@
   align-self: center
   margin: 3rem 0
   
+.more-projects
+  @include component-width
+  // @include component-padding
+
+.more-projects-title
+  text-align: center
+  margin-bottom: 3rem
+
+.more-projects-container
+  
+  
+  display: grid
+  grid-gap: 2rem
+
+  @include responsive(medium)
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+    background-color: rgba(0,0,0,0)
+
+.mini-container
+  max-width: 40rem
+  // background-color: #2C5364
+  // height: 42rem
+
+  &:not(:last-of-type)
+    margin-bottom: 2rem
+  
+  @include responsive(large)
+    // background-color: #2C5364
+
+.mini-desc-div
+  background-color: #2C5364
+  opacity: 1
+  padding: 2rem

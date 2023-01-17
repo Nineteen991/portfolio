@@ -2,6 +2,11 @@ import { useState } from 'react'
 
 import githubIcon from '../images/github-mark-white.png'
 import externalLink from '../images/external-link.png'
+import QuizAppCard from './Mini-Projects/QuizAppCard'
+import MovieWatchList from './Mini-Projects/MovieWatchList'
+import ChromeExt from './Mini-Projects/Chrome-ext'
+import Alarm from './Mini-Projects/Alarm'
+import NotesApp from './Mini-Projects/NotesApp'
 
 export default function Portfolio() {
   const [showMiniProjects, setShowMiniProjects] = useState(false)
@@ -110,7 +115,29 @@ export default function Portfolio() {
         </div>
       </div>
 
-      <button className='btn mini-projects'>Show Mini Projects</button>
+      {
+        !showMiniProjects
+          ? (
+              <button 
+                className='btn mini-projects'
+                onClick={ () => setShowMiniProjects(prev => !prev) }
+              >
+                Show Mini Projects
+              </button>
+            )
+          : <div className='more-projects'>
+              <h2 className="tertiary-titles more-projects-title">
+                Noteworthy Mini Projects
+              </h2>
+              <div className='more-projects-container'>
+                <QuizAppCard />
+                <MovieWatchList />
+                <ChromeExt />
+                <Alarm />
+                <NotesApp />
+              </div>
+            </div>
+      }
 
     </div>
   )

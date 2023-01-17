@@ -1,11 +1,8 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Work from './components/Work'
-import Contact from './components/Contact'
+import HomePage from './pages/HomePage'
 import './App.sass'
 
 export default function App() {
@@ -25,11 +22,9 @@ export default function App() {
             : null
         }
       >
-        <Hero />
-        <About />
-        <Portfolio />
-        <Work />
-        <Contact />
+        <Routes>
+          <Route path='/' element={ <HomePage /> } />
+        </Routes>
       </div>
     </div>
   );
