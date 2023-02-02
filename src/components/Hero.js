@@ -17,11 +17,11 @@ export default function Hero() {
         </p>
         <p className="title-p">
           Web development is fun and allows me to be creative while also
-          satifying my desire towards constant self growth.
+          satifying my desire toward constant self growth.
         </p>
         <p className="title-p">
-          I've also found web app hacking fun. As I've learned to create
-          both the front and back ends of a website. I've discovered
+          I've also found web app hacking a thrill. As I've learned to 
+          create both the front and back ends of a website. I've discovered
           that the smallest mistake can lead to backdoors.
         </p>
       </div>

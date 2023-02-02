@@ -13,8 +13,8 @@ export default function About() {
             to change careers to front end development.
           </p>
           <p className="title-p">
-            I have 3 college degrees. None of which are in computer
-            science. I enjoy challenging myself. I am self taught in web development.
+            I have 2 college degrees. Neither of which are in computer
+            science. I enjoy challenging myself. I am a self taught developer.
           </p>
           <p className="title-p">
             Here are some of the technologies that I've been learning:
@@ -27,6 +27,7 @@ export default function About() {
             <li className="list-items">Express</li>
             <li className="list-items">MongoDB</li>
             <li className="list-items">Sass</li>
+            <li className="list-items">Ethers.js</li>
           </ul>
         </div>
         

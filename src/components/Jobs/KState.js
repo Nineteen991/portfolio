@@ -3,9 +3,9 @@ export default function KState() {
     <>
       <h4 className="job-title">
         Administrative Specialist 
-        <span className="mint">@ K-State University</span>
+        <span className="mint"> @ K-State University</span>
       </h4>
-      <p className="project-desc job-dates">May 2013 - April 2017</p>
+      <p className="project-desc job-dates">December 2010 - April 2017</p>
       <ul className="job-desc">
         <li className="list-margin">
           Manages recruitment of office staff, background checks, interviews, placement, position classification, pay, employee relations, and employee development.

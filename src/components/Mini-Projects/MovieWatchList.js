@@ -28,11 +28,6 @@ export default function MovieWatchList() {
             className="project-icons"
           />
         </a>
-        <a 
-          href='https://main--spiffy-figolla-126057.netlify.app/' 
-          className="project-link-a">
-          <img src={externalLink} alt="Link" className='project-icons' />
-        </a>
       </div>
     </div>
   )
