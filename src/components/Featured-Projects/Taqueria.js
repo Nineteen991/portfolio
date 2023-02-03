@@ -4,7 +4,7 @@ import externalLink from '../../images/external-link.png'
 export default function Taqueria() {
   return (
     <div className="projects">
-      <div className="project-description project-left-justified">
+      <div className="project-description project-right-justified">
 
         <p className="project-title">Featured Project</p>
         <h3 className="tertiary-titles">Taqueria Tepeque</h3>
@@ -47,7 +47,7 @@ export default function Taqueria() {
         </div>
       </div>
 
-      <div className='project-img-div left-justified'>
+      <div className='project-img-div right-justified'>
         <div className='project-img-2'></div>
       </div>
     </div>

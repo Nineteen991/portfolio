@@ -4,7 +4,7 @@ import externalLink from '../../images/external-link.png'
 export default function BGS() {
   return (
     <div className="projects">
-      <div className="project-description project-right-justified">
+      <div className="project-description project-left-justified">
 
         <p className="project-title">Featured Project</p>
         <h3 className="tertiary-titles">Santa Cruz Games</h3>
@@ -18,11 +18,11 @@ export default function BGS() {
             I built a node.js backend that uses MongoDB Atlas & 
             Mongoose to track product inventory & orders placed.
           </p>
-          <p className="project-desc">
+          {/* <p className="project-desc">
             The web app also uses Stripe for payments. Developer 
             Visa card number is 4242 4242 4242 4242. You can use
             any future expiration date, zip, & csv code.
-          </p>
+          </p> */}
         </div>
         <ul className="technologies-ul">
           <li className="technologies-li">React</li>
@@ -41,15 +41,10 @@ export default function BGS() {
               className="project-icons"
             />
           </a>
-          <a 
-            href='https://main--spiffy-figolla-126057.netlify.app/' 
-            className="project-link-a">
-            <img src={externalLink} alt="Link" className='project-icons' />
-          </a>
         </div>
       </div>
 
-      <div className='project-img-div right-justified'>
+      <div className='project-img-div left-justified'>
         <div className='project-img'></div>
       </div>
     </div>

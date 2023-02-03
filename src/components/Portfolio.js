@@ -17,8 +17,8 @@ export default function Portfolio() {
       <h2 className="secondary-titles portfolio-h2">Portfolio</h2>
 
       {/* Featured Projects */}
-      <BGS />
       <Taqueria />
+      <BGS />
       <Chat />
 
       {
