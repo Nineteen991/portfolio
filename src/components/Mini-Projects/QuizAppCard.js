@@ -32,7 +32,7 @@ export default function QuizAppCard() {
           />
         </a>
         <a 
-          href='https://main--spiffy-figolla-126057.netlify.app/' 
+          href='https://lovely-kitten-67a2b9.netlify.app/' 
           className="project-link-a">
           <img src={externalLink} alt="Link" className='project-icons' />
         </a>
