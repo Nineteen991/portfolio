@@ -1,4 +1,4 @@
-import doggo from '../images/doggo.webp'
+// import doggo from '../images/doggo.webp'
 
 export default function About() {
   return (
