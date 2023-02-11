@@ -1,5 +1,5 @@
 import githubIcon from '../../images/github-mark-white.png'
-import externalLink from '../../images/external-link.png'
+// import externalLink from '../../images/external-link.png'
 
 export default function Chat() {
   return (
