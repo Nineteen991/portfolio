@@ -5,7 +5,7 @@ export default function Hero() {
         <p className="title-p opening-p">Hi, I'm</p>
         <h1 className="title opening-title">Jason Alaniz</h1>
         <h1 className="title opening-title faded">
-          and I am a Frontend Developer.
+          and I am a Web Developer.
         </h1>
         <p className="title-p">
           I develop and design websites & web apps using React, Sass, and
