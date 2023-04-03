@@ -17,6 +17,8 @@ export default function BGS() {
           <p className="project-desc">
             I built a node.js backend that uses MongoDB Atlas & 
             Mongoose to track product inventory & orders placed.
+            I also dockerized the front & back ends for easier
+            deployment on your local machine.
           </p>
           {/* <p className="project-desc">
             The web app also uses Stripe for payments. Developer 

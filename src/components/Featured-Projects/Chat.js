@@ -17,6 +17,8 @@ export default function Chat() {
           </p>
           <p className="project-desc">
             I used typescript with the node server.
+            I also dockerized the front & back ends for easier
+            deployment on your local machine.
           </p>
         </div>
         <ul className="technologies-ul">
