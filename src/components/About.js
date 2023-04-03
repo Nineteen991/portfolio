@@ -28,6 +28,7 @@ export default function About() {
             <li className="list-items">MongoDB</li>
             <li className="list-items">Sass</li>
             <li className="list-items">Ethers.js</li>
+            <li className="list-items">Docker</li>
           </ul>
         </div>
         
