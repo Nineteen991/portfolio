@@ -3,6 +3,7 @@ import { useState } from 'react'
 import BGS from './Featured-Projects/BGS'
 import Taqueria from './Featured-Projects/Taqueria'
 import Chat from './Featured-Projects/Chat'
+import CoinDexWatch from './Featured-Projects/CoinDexWatch'
 import QuizAppCard from './Mini-Projects/QuizAppCard'
 import MovieWatchList from './Mini-Projects/MovieWatchList'
 import ChromeExt from './Mini-Projects/Chrome-ext'
@@ -20,6 +21,7 @@ export default function Portfolio() {
       <Taqueria />
       <BGS />
       <Chat />
+      <CoinDexWatch />
 
       {
         !showMiniProjects
